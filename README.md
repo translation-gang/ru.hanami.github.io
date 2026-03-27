@@ -4,7 +4,7 @@
 
 ### Requirements
 
-  * Ruby 2+
+  * Ruby 2.7
   * Bundler (`gem install bundler`)
 
 ### Steps
@@ -25,7 +25,6 @@ Usage:
 Available commands:
   develop - Start the local server to develop the site
   build   - Build the site locally
-  publish - Build the site locally and publish
   help    - Print this help
 ```
 
@@ -35,6 +34,4 @@ invoke without `./`
 
 ## Production deployment
 
-The deployment is automated with Travis CI. Upon merging PR into `build` branch, deployment script is invoked.
-
-For more details, please consult `.travis.yml` file.
+The deployment is automated with Netifly.

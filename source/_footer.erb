@@ -1,5 +1,3 @@
-<%= partial 'lotus' %>
-
 <div class="block app-block-footer">
   <div class="container">
     <div class="row">
@@ -7,38 +5,45 @@
         <ul class="list-unstyled list-spaced">
           <li><h6 class="text-uppercase">Project</h6></li>
           <li><a href="https://github.com/hanami" target="_blank">GitHub</a></li>
-          <li><a href="https://twitter.com/hanamirb" target="_blank">Twitter</a></li>
           <li><a href="https://rubygems.org/gems/hanami" target="_blank">Rubygems</a></li>
-          <li><a href="/status" target="_blank">Gems Status</a></li>
+          <li><a href="/status">Gems Status</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/security">Security</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="https://guides.hanamirb.org/" target="_blank">Guides</a></li>
+          <li><a href="https://docs.hanamirb.org/" target="_blank">Docs</a></li>
+          <li><a href="/ai-policy">AI policy</a></li>
         </ul>
       </div>
       <div class="col-sm-2 m-b">
         <ul class="list-unstyled list-spaced">
           <li><h6 class="text-uppercase">Community</h6></li>
           <li><a href="/community#code-of-conduct">Code of Conduct</a></li>
-          <li><a href="http://chat.hanamirb.org" target="_blank">Chat</a></li>
           <li><a href="https://discourse.hanamirb.org" target="_blank">Forum</a></li>
-          <li><a href="https://stackoverflow.com/questions/tagged/hanami" target="_blank">StackOverflow</a></li>
-          <li><a href="/mailing-list">Mailing List</a></li>
-          <li><a href="http://awesome-hanami.org" target="_blank">Awesome List</a></li>
+          <li><a href="https://discord.gg/KFCxDmk3JQ" target="_blank">Chat</a></li>
+          <li><a href="https://ruby.social/@hanami" rel="me" target="_blank">Mastodon</a></li>
+          <li><a href="https://bsky.app/profile/hanamirb.org" target="_blank">Bluesky</a></li>
         </ul>
       </div>
       <div class="col-sm-2 m-b">
         <ul class="list-unstyled list-spaced">
-          <a href="http://dnsimple.link/resolving-hanami" target="_blank">
-            <span>Resolving with<br/></span>
-            <img src="https://cdn.dnsimple.com/assets/resolving-with-us/logo-dark.png" alt="DNSimple" style="display:block;margin:0;padding:0;width:100px;"/>
-          </a>
+          <li><h6 class="text-uppercase"><a href="/#supporters">Supported by</a></h6></li>
+          <li>
+            <a href="https://sidekiq.org" target="_blank" class="footer-sponsor">
+              <img src="/images/patrons/sidekiq.svg" alt="Sidekiq" class="footer-sponsor-logo">
+            </a>
+          </li>
         </ul>
       </div>
       <div class="col-sm-6">
         <h6 class="text-uppercase">About</h6>
         <p>
-          Hanami is a web framework for Ruby &mdash; &copy; 2014-<%= Time.now.year %> <a href="http://lucaguidi.com" target="_blank">Luca Guidi</a>.<br>
+          &copy; 2014-<%= Time.now.year %> Hanami Team.<br>
           Released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
           <br><br>
           This project was formerly known as <strong>Lotus</strong>.
         </p>
+        <a class="github-button" href="https://github.com/hanami/hanami" data-size="large" data-show-count="true" aria-label="Star hanami/hanami on GitHub">Star</a>
       </div>
     </div>
   </div>
@@ -55,8 +60,3 @@
   ga('create', 'UA-47369640-1', 'hanamirb.org');
   ga('send', 'pageview');
 </script>
-
-<script>
-  ((window.gitter = {}).chat = {}).options = { room: 'hanami/chat' };
-</script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>

@@ -261,8 +261,11 @@ body {
 #markdown-toc {
   padding-left: 0;
   margin-top: 30px;
-  font-size: 13px;
+  font-size: 16px;
   list-style: none;
+}
+#markdown-toc span {
+  cursor: pointer;
 }
 #markdown-toc a {
   display: block;
@@ -280,6 +283,10 @@ body {
 #markdown-toc ul {
   list-style: none;
   padding-left: 20px;
+  display: none;
+}
+#markdown-toc li.opened ul {
+  display: block;
 }
 #markdown-toc ul ul {
   display: none;
@@ -291,7 +298,7 @@ body {
   #markdown-toc {
     float: right;
     width: 220px;
-    margin-right: -250px;
+    margin-right: -260px;
   }
   #markdown-toc a {
     color: #555555;
@@ -536,6 +543,13 @@ body {
 .convention {
   border-color: #3498db;
   background-color: #67cbfe;
+}
+.convention a {
+  color: #fff;
+  font-weight: 700;
+}
+.convention p:last-child {
+  margin-bottom: 0;
 }
 .warning {
   border-color: #f39c12;
